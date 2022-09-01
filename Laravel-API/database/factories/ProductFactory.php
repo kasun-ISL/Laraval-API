@@ -17,8 +17,8 @@ class ProductFactory extends Factory
         return [
         'name' =>$this->faker->word(),
          'category_id' =>\App\Models\Catogery::inRandomOrder()->first()->id,
-         'description'  =>$this ->faker->title(),
-         'price' =>rand(1000,99999)
+         'description'  =>$this ->faker->paragraph,
+         'price' =>rand(1000,124567)
         ];
     }
 }

@@ -15,7 +15,6 @@ class CreateCatogeriesTable extends Migration
     {
         Schema::create('catogeries', function (Blueprint $table) {
             $table->id();
-           
             $table->timestamps();
             $table ->string("name"); 
         });
@@ -28,6 +27,9 @@ class CreateCatogeriesTable extends Migration
      */
     public function down()
     {
+
         Schema::dropIfExists('catogeries');
+
+
     }
 }
