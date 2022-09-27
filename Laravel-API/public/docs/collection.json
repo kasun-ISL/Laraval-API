@@ -1,0 +1,423 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "localhost"
+        }
+    ],
+    "info": {
+        "name": "Laravel-API\"l",
+        "_postman_id": "cfaf41d3-f701-4763-9274-944014a8f131",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Catogeries",
+            "description": "Managing Catogeries",
+            "item": [
+                {
+                    "name": "Get Catogeries",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/catogeries",
+                            "query": [
+                                {
+                                    "key": "page",
+                                    "value": "12",
+                                    "description": "which page to show.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/catogeries?page=12"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "List all Catogeries",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "Get Catogeries Response #1",
+                            "originalRequest": {
+                                "url": {
+                                    "protocol": "http",
+                                    "host": "{{baseUrl}}",
+                                    "path": "api\/catogeries",
+                                    "query": [
+                                        {
+                                            "key": "page",
+                                            "value": "12",
+                                            "description": "which page to show.",
+                                            "disabled": false
+                                        }
+                                    ],
+                                    "raw": "http:\/\/{{baseUrl}}\/api\/catogeries?page=12"
+                                },
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application\/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application\/json"
+                                    }
+                                ],
+                                "body": null,
+                                "description": "List all Catogeries",
+                                "auth": {
+                                    "type": "noauth"
+                                }
+                            },
+                            "header": null,
+                            "cookie": [],
+                            "body": "{\n    \"message\": \"Unauthenticated.\"\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Post Catogeries",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/catogeries",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/catogeries"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"facere\"\n}"
+                        },
+                        "description": "Create New Catoger",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/catogeries\/{catogery}",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/catogeries\/:catogery",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/catogeries\/:catogery",
+                            "variable": [
+                                {
+                                    "id": "catogery",
+                                    "key": "catogery",
+                                    "value": "impedit",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "api\/catogeries\/{catogery} Response #1",
+                            "originalRequest": {
+                                "url": {
+                                    "protocol": "http",
+                                    "host": "{{baseUrl}}",
+                                    "path": "api\/catogeries\/:catogery",
+                                    "query": [],
+                                    "raw": "http:\/\/{{baseUrl}}\/api\/catogeries\/:catogery",
+                                    "variable": [
+                                        {
+                                            "id": "catogery",
+                                            "key": "catogery",
+                                            "value": "impedit",
+                                            "description": ""
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application\/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application\/json"
+                                    }
+                                ],
+                                "body": null,
+                                "description": "",
+                                "auth": {
+                                    "type": "noauth"
+                                }
+                            },
+                            "header": null,
+                            "cookie": [],
+                            "body": "{\n    \"message\": \"Unauthenticated.\"\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "api\/catogeries\/{catogery}",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/catogeries\/:catogery",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/catogeries\/:catogery",
+                            "variable": [
+                                {
+                                    "id": "catogery",
+                                    "key": "catogery",
+                                    "value": "accusamus",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"et\"\n}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/catogeries\/{catogery}",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/catogeries\/:catogery",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/catogeries\/:catogery",
+                            "variable": [
+                                {
+                                    "id": "catogery",
+                                    "key": "catogery",
+                                    "value": "ex",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"qui\"\n}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Products",
+            "description": "Managing Products",
+            "item": [
+                {
+                    "name": "api\/product",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/product",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/product"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "api\/product Response #1",
+                            "originalRequest": {
+                                "url": {
+                                    "protocol": "http",
+                                    "host": "{{baseUrl}}",
+                                    "path": "api\/product",
+                                    "query": [],
+                                    "raw": "http:\/\/{{baseUrl}}\/api\/product"
+                                },
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application\/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application\/json"
+                                    }
+                                ],
+                                "body": null,
+                                "description": "",
+                                "auth": {
+                                    "type": "noauth"
+                                }
+                            },
+                            "header": null,
+                            "cookie": [],
+                            "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"category_id\": 990,\n            \"name\": \"quo\",\n            \"description\": \"Aliquid et maiores sequi sint ut illum ducimus. Laudantium aut suscipit mollitia esse quia. Distinctio commodi voluptates temporibus dolores necessitatibus amet culpa.\",\n            \"price\": \"1,089.03\",\n            \"category\": {\n                \"id\": 990,\n                \"name\": \"Shane Hickle\",\n                \"created_at\": \"2022-08-26T01:49:40.000000Z\"\n            }\n        },\n        {\n            \"id\": 2,\n            \"category_id\": 639,\n            \"name\": \"porro\",\n            \"description\": \"Quia sed explicabo dignissimos harum harum aut quia. Laudantium laboriosam ut saepe aspernatur non. Illo nisi voluptas voluptatem ducimus eum. Omnis omnis et dolorem.\",\n            \"price\": \"719.57\",\n            \"category\": {\n                \"id\": 639,\n                \"name\": \"Leanna Wilderman\",\n                \"created_at\": \"2022-08-26T01:49:39.000000Z\"\n            }\n        },\n        {\n            \"id\": 3,\n            \"category_id\": 637,\n            \"name\": \"consequatur\",\n            \"description\": \"Nihil ea molestiae et aliquid libero ut. Ad et aut tenetur alias enim id doloremque praesentium. Hic ea id ipsum ratione a dolor corporis. Animi impedit alias sit dignissimos quae earum.\",\n            \"price\": \"981.06\",\n            \"category\": {\n                \"id\": 637,\n                \"name\": \"Nat Denesik\",\n                \"created_at\": \"2022-08-26T01:49:39.000000Z\"\n            }\n        },\n        {\n            \"id\": 4,\n            \"category_id\": 613,\n            \"name\": \"ab\",\n            \"description\": \"Rerum voluptatem id autem ut eos necessitatibus. Et unde temporibus blanditiis similique vero. Explicabo nemo velit non eveniet autem esse. Eius sed debitis ut et sed quia facere.\",\n            \"price\": \"936.23\",\n            \"category\": {\n                \"id\": 613,\n                \"name\": \"Mohammed Rohan\",\n                \"created_at\": \"2022-08-26T01:49:39.000000Z\"\n            }\n        },\n        {\n            \"id\": 5,\n            \"category_id\": 117,\n            \"name\": \"officia\",\n            \"description\": \"Aspernatur et ratione voluptas dolorem. Quo saepe nihil consequatur saepe voluptatum consequatur culpa. Quos accusantium minus fuga qui sit omnis debitis. Est omnis et officiis ea.\",\n            \"price\": \"901.39\",\n            \"category\": {\n                \"id\": 117,\n                \"name\": \"Caden Connelly V\",\n                \"created_at\": \"2022-08-26T01:49:39.000000Z\"\n            }\n        },\n        {\n            \"id\": 6,\n            \"category_id\": 126,\n            \"name\": \"vel\",\n            \"description\": \"Consequuntur mollitia sapiente amet facilis. Aut et eveniet culpa cupiditate nemo officia ut expedita. Sit impedit doloremque odio est perferendis.\",\n            \"price\": \"424.28\",\n            \"category\": {\n                \"id\": 126,\n                \"name\": \"Mr. Deshawn Sipes V\",\n                \"created_at\": \"2022-08-26T01:49:39.000000Z\"\n            }\n        },\n        {\n            \"id\": 7,\n            \"category_id\": 755,\n            \"name\": \"et\",\n            \"description\": \"Dolore est vero est nisi nulla maiores. Mollitia id corporis similique fuga et. Cupiditate harum esse repellendus ut.\",\n            \"price\": \"812.35\",\n            \"category\": {\n                \"id\": 755,\n                \"name\": \"River Bogan\",\n                \"created_at\": \"2022-08-26T01:49:39.000000Z\"\n            }\n        },\n        {\n            \"id\": 8,\n            \"category_id\": 783,\n            \"name\": \"quod\",\n            \"description\": \"Distinctio veritatis fugiat voluptatum minima facilis quasi. Distinctio vero ullam dolorem velit ad officia. Ex ipsa aliquid quia et illum molestias quia. Sed tenetur ea aperiam porro.\",\n            \"price\": \"1,221.12\",\n            \"category\": {\n                \"id\": 783,\n                \"name\": \"Howell Crist\",\n                \"created_at\": \"2022-08-26T01:49:39.000000Z\"\n            }\n        },\n        {\n            \"id\": 9,\n            \"category_id\": 236,\n            \"name\": \"accusantium\",\n            \"description\": \"Autem omnis amet fugiat quod nemo aliquid. Quis et eligendi atque ea vel velit. Blanditiis numquam facilis ducimus qui. Rem id fugiat consequuntur earum amet est qui.\",\n            \"price\": \"919.88\",\n            \"category\": {\n                \"id\": 236,\n                \"name\": \"Alva Altenwerth Jr.\",\n                \"created_at\": \"2022-08-26T01:49:39.000000Z\"\n            }\n        }\n    ],\n    \"links\": {\n        \"first\": \"http:\\\/\\\/localhost\\\/api\\\/product?page=1\",\n        \"last\": \"http:\\\/\\\/localhost\\\/api\\\/product?page=112\",\n        \"prev\": null,\n        \"next\": \"http:\\\/\\\/localhost\\\/api\\\/product?page=2\"\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 112,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http:\\\/\\\/localhost\\\/api\\\/product?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": \"http:\\\/\\\/localhost\\\/api\\\/product?page=2\",\n                \"label\": \"2\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http:\\\/\\\/localhost\\\/api\\\/product?page=3\",\n                \"label\": \"3\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http:\\\/\\\/localhost\\\/api\\\/product?page=4\",\n                \"label\": \"4\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http:\\\/\\\/localhost\\\/api\\\/product?page=5\",\n                \"label\": \"5\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http:\\\/\\\/localhost\\\/api\\\/product?page=6\",\n                \"label\": \"6\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http:\\\/\\\/localhost\\\/api\\\/product?page=7\",\n                \"label\": \"7\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http:\\\/\\\/localhost\\\/api\\\/product?page=8\",\n                \"label\": \"8\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http:\\\/\\\/localhost\\\/api\\\/product?page=9\",\n                \"label\": \"9\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http:\\\/\\\/localhost\\\/api\\\/product?page=10\",\n                \"label\": \"10\",\n                \"active\": false\n            },\n            {\n                \"url\": null,\n                \"label\": \"...\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http:\\\/\\\/localhost\\\/api\\\/product?page=111\",\n                \"label\": \"111\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http:\\\/\\\/localhost\\\/api\\\/product?page=112\",\n                \"label\": \"112\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http:\\\/\\\/localhost\\\/api\\\/product?page=2\",\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http:\\\/\\\/localhost\\\/api\\\/product\",\n        \"per_page\": 9,\n        \"to\": 9,\n        \"total\": 1000\n    }\n}"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "User",
+            "description": "Managing User",
+            "item": [
+                {
+                    "name": "api\/register",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/register",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/register"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/loginUser",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/loginUser",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/loginUser"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}
